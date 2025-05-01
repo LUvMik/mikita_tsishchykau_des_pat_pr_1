@@ -1,0 +1,28 @@
+2025-05-01 15:14:21,850 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the base and vertex coincide: (1.0, 2.0, 3.0)
+2025-05-01 15:14:21,857 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: value “a.0” is not a number
+2025-05-01 15:14:21,858 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the radius must be positive, received -1.0
+2025-05-01 15:14:21,858 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: 8 values expected, received 6
+2025-05-01 15:37:21,798 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the base and vertex coincide: (1.0, 1.0, 1.0)
+2025-05-01 15:37:21,814 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the radius must be positive, received -2.0
+2025-05-01 15:37:21,819 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: 8 values expected, received 3
+2025-05-01 15:37:21,828 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: value “a” is not a number
+2025-05-01 15:41:52,610 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the base and vertex coincide: (1.0, 1.0, 1.0)
+2025-05-01 15:41:52,623 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the radius must be positive, received -2.0
+2025-05-01 15:41:52,627 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: 8 values expected, received 3
+2025-05-01 15:41:52,637 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: value “a” is not a number
+2025-05-01 15:43:34,831 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the base and vertex coincide: (1.0, 1.0, 1.0)
+2025-05-01 15:43:34,845 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the radius must be positive, received -2.0
+2025-05-01 15:43:34,847 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: 8 values expected, received 3
+2025-05-01 15:43:34,854 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: value “a” is not a number
+2025-05-01 15:45:09,191 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: value “a” is not a number
+2025-05-01 15:45:09,219 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the base and vertex coincide: (1.0, 2.0, 3.0)
+2025-05-01 15:45:09,224 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the radius must be positive, received -1.0
+2025-05-01 15:45:09,226 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: 8 values expected, received 3
+2025-05-01 15:48:29,405 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: value “a” is not a number
+2025-05-01 15:48:29,445 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the base and vertex coincide: (1.0, 2.0, 3.0)
+2025-05-01 15:48:29,450 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the radius must be positive, received -1.0
+2025-05-01 15:48:29,453 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: 8 values expected, received 3
+2025-05-01 15:50:21,420 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: value “a” is not a number
+2025-05-01 15:50:21,453 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the base and vertex coincide: (1.0, 2.0, 3.0)
+2025-05-01 15:50:21,459 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: the radius must be positive, received -1.0
+2025-05-01 15:50:21,463 [main] WARN  com.esde.validator.ConeValidator - ConeValidator:Error: 8 values expected, received 3
