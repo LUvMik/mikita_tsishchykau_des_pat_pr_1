@@ -1,12 +1,13 @@
-import com.esde.entity.Cone;
-import com.esde.entity.Point;
-import com.esde.service.ConeService;
+import com.esde.shape.entity.Cone;
+import com.esde.shape.entity.Point;
+import com.esde.shape.service.ConeService;
+import com.esde.shape.service.impl.ConeServiceImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ConeServiceTest {
-    ConeService service = new ConeService();
+    ConeService service = new ConeServiceImpl();
 
     @Test
     public void volumeCalculationShouldBeCorrect() {

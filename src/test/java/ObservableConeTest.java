@@ -1,8 +1,10 @@
-import com.esde.entity.Point;
-import com.esde.observer.ObservableCone;
-import com.esde.observer.api.Observer;
-import com.esde.service.ConeService;
-import com.esde.warehouse.Warehouse;
+import com.esde.shape.entity.Point;
+import com.esde.shape.observer.ObservableCone;
+import com.esde.shape.observer.WarehouseObserver;
+import com.esde.shape.observer.api.Observer;
+import com.esde.shape.service.impl.ConeServiceImpl;
+import com.esde.shape.warehouse.Warehouse;
+import com.esde.shape.warehouse.impl.WarehouseImpl;
 import org.junit.jupiter.api.Test;
 
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -78,12 +80,12 @@ public class ObservableConeTest {
     @Test
     void shouldUpdateWarehouseOnChange() {
         ObservableCone cone = new ObservableCone("c6", new Point(0, 0, 0), new Point(0, 0, 3), 2.0);
-        cone.attach(new com.esde.observer.WarehouseObserver());
+        cone.attach(new WarehouseObserver());
 
         cone.setRadius(3.0); // должно обновить warehouse
 
-        Warehouse warehouse = Warehouse.getInstance();
-        double expectedVolume = new ConeService().calculateVolume(cone);
-        assertEquals(expectedVolume, warehouse.getVolume("c6"), 0.0001);
+        Warehouse warehouseImpl = WarehouseImpl.getInstance();
+        double expectedVolume = new ConeServiceImpl().calculateVolume(cone);
+        assertEquals(expectedVolume, warehouseImpl.getVolume("c6"), 0.0001);
     }
 }

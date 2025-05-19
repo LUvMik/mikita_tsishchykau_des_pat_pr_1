@@ -1,7 +1,8 @@
-import com.esde.entity.Cone;
-import com.esde.entity.Point;
-import com.esde.repository.ConeRepository;
-import com.esde.specification.ConeSpecification;
+import com.esde.shape.entity.Cone;
+import com.esde.shape.entity.Point;
+import com.esde.shape.repository.ConeRepository;
+import com.esde.shape.repository.impl.ConeRepositoryImpl;
+import com.esde.shape.specification.ConeSpecification;
 import org.junit.jupiter.api.Test;
 
 import java.util.Comparator;
@@ -13,7 +14,7 @@ public class ConeRepositoryTest {
 
     @Test
     void shouldAddConeToRepository() {
-        ConeRepository repo = new ConeRepository();
+        ConeRepository repo = new ConeRepositoryImpl();
         Cone cone = new Cone("c1", new Point(0, 0, 0), new Point(0, 0, 1), 1);
         repo.add(cone);
 
@@ -24,7 +25,7 @@ public class ConeRepositoryTest {
 
     @Test
     void shouldReturnCopyFromGetAll() {
-        ConeRepository repo = new ConeRepository();
+        ConeRepository repo = new ConeRepositoryImpl();
         Cone cone = new Cone("c1", new Point(0, 0, 0), new Point(0, 0, 1), 1);
         repo.add(cone);
 
@@ -37,7 +38,7 @@ public class ConeRepositoryTest {
 
     @Test
     void shouldQueryBySpecification() {
-        ConeRepository repo = new ConeRepository();
+        ConeRepository repo = new ConeRepositoryImpl();
         Cone small = new Cone("small", new Point(0, 0, 0), new Point(0, 0, 1), 1);
         Cone large = new Cone("large", new Point(0, 0, 0), new Point(0, 0, 1), 5);
 
@@ -54,7 +55,7 @@ public class ConeRepositoryTest {
 
     @Test
     void shouldSortByRadius() {
-        ConeRepository repo = new ConeRepository();
+        ConeRepository repo = new ConeRepositoryImpl();
         Cone cone1 = new Cone("c1", new Point(0, 0, 0), new Point(0, 0, 1), 3);
         Cone cone2 = new Cone("c2", new Point(0, 0, 0), new Point(0, 0, 1), 1);
         Cone cone3 = new Cone("c3", new Point(0, 0, 0), new Point(0, 0, 1), 2);

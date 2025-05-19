@@ -1,8 +1,9 @@
-import com.esde.entity.Cone;
-import com.esde.entity.Point;
-import com.esde.observer.WarehouseObserver;
-import com.esde.service.ConeService;
-import com.esde.warehouse.Warehouse;
+import com.esde.shape.entity.Cone;
+import com.esde.shape.entity.Point;
+import com.esde.shape.observer.WarehouseObserver;
+import com.esde.shape.service.impl.ConeServiceImpl;
+import com.esde.shape.warehouse.Warehouse;
+import com.esde.shape.warehouse.impl.WarehouseImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,14 +11,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class WarehouseTest {
     private WarehouseObserver observer;
-    private ConeService service;
+    private ConeServiceImpl service;
     private Warehouse warehouse;
 
     @BeforeEach
     void setup() {
         observer = new WarehouseObserver();
-        service = new ConeService();
-        warehouse = Warehouse.getInstance();
+        service = new ConeServiceImpl();
+        warehouse = WarehouseImpl.getInstance();
     }
 
     @Test
@@ -45,7 +46,7 @@ public class WarehouseTest {
     @Test
     public void shouldStoreVolumeAndSurfaceArea() {
         Cone cone = new Cone("c1", new Point(0, 0, 0), new Point(0, 0, 3), 2);
-        Warehouse warehouse = Warehouse.getInstance();
+        Warehouse warehouse = WarehouseImpl.getInstance();
         warehouse.update(cone, 12.0, 24.0);
         assertEquals(warehouse.getVolume("c1"), 12.0);
         assertEquals(warehouse.getSurfaceArea("c1"), 24.0);
